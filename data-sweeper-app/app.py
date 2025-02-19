@@ -9,6 +9,7 @@ st.write("🚀 Welcome to Data Sweeper! Upload your CSV or Excel files and clean
 
 uploaded_files = st.file_uploader("Upload files (CSV or Excel)", type=["csv", "xlsx"], accept_multiple_files=True)
 
+
 # Check if openpyxl is available
 try:
     import openpyxl
