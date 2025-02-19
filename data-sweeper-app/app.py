@@ -9,15 +9,28 @@ st.write("🚀 Welcome to Data Sweeper! Upload your CSV or Excel files and clean
 
 uploaded_files = st.file_uploader("Upload files (CSV or Excel)", type=["csv", "xlsx"], accept_multiple_files=True)
 
+# Check if openpyxl is available
+try:
+    import openpyxl
+    excel_engine = 'openpyxl'
+except ImportError:
+    st.warning("⚠️ 'openpyxl' is missing. Excel files won't be processed. Install it using: `pip install openpyxl`")
+    excel_engine = None
+
 if uploaded_files:
     for file in uploaded_files:
         file_ext = os.path.splitext(file.name)[-1].lower()
 
         try:
+            # Read CSV or Excel files
             if file_ext == ".csv":
                 df = pd.read_csv(file)
             elif file_ext == ".xlsx":
-                df = pd.read_excel(file, engine='openpyxl')
+                if excel_engine:
+                    df = pd.read_excel(file, engine=excel_engine)
+                else:
+                    st.error(f"❌ Unable to process {file.name} - 'openpyxl' is required.")
+                    continue
             else:
                 st.error(f"❌ Invalid file type: {file_ext}")
                 continue
@@ -52,7 +65,7 @@ if uploaded_files:
             df = df[columns]
 
             # Create some visualizations
-            if st.checkbox("📈 Data Visualizations",key=f"viz_{file.name}"):
+            if st.checkbox("📈 Data Visualizations", key=f"viz_{file.name}"):
                 st.bar_chart(df.select_dtypes(include="number").iloc[:, :2])
 
             # Convert the file
@@ -66,9 +79,13 @@ if uploaded_files:
                     file_name = file.name.replace(file_ext, ".csv")
                     mime_type = "text/csv"
                 elif conversion_type == "Excel":
-                    df.to_excel(buffer, index=False, engine='openpyxl')
-                    file_name = file.name.replace(file_ext, ".xlsx")
-                    mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    if excel_engine:
+                        df.to_excel(buffer, index=False, engine=excel_engine)
+                        file_name = file.name.replace(file_ext, ".xlsx")
+                        mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    else:
+                        st.error("❌ Cannot convert to Excel - 'openpyxl' is required.")
+                        continue
 
                 buffer.seek(0)
 
