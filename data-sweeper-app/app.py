@@ -1,5 +1,12 @@
 import streamlit as st
 import pandas as pd
+try:
+    import openpyxl
+except ImportError:
+    # st.warning("Installing missing dependency 'openpyxl'...")
+    import subprocess
+    # subprocess.run(["pip", "install", "openpyxl"])
+    import openpyxl
 import os
 from io import BytesIO
 
