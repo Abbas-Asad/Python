@@ -1,11 +1,13 @@
 import streamlit as st
+import os
 
-# Load external CSS
 def load_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    if os.path.exists(file_name):  # Check if the file exists
+        with open(file_name) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    else:
+        st.error(f"⚠️ Error: '{file_name}' not found!")
 
-# Implement the CSS
 load_css("styles.css")
 
 # All Physics Units
