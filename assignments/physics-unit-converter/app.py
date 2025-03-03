@@ -8,7 +8,7 @@ def load_css(file_name):
     else:
         st.error(f"⚠️ Error: '{file_name}' not found!")
 
-load_css("styles.css")
+load_css(os.path.join(os.path.dirname(__file__), "styles.css"))
 
 # All Physics Units
 units = {
