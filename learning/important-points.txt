@@ -1,0 +1,17 @@
+There are four collection data types in Python:
+
+List is a collection which is ordered, indexed and mutable. Allows duplicate members. [square brcs]
+Tuple is a collection which is ordered, indexed and immutable. Allows duplicate members. (round brcs)(single tuple ,)
+Set is a collection which is unordered, immutable, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and mutable. No duplicate members.
+
+order aur mutable mtlb jo bhi hoga akhir may add hoga aur aur immutable to change ho hi nhi skta 
+
+Lists are ordered, indexed, allows duplication and mutable (can be changed).
+my_list = [10, 20, 30, 40]
+my_list.append(50)   # Adds 50
+my_list.remove(20)   # Removes 20
+
+
+Tuples are ordered, indexed, allows duplication but immutable (can't be changed).
+(tuple may crud wgera kay methods nhi lga skty)

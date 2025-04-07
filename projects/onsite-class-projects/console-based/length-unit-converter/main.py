@@ -1,7 +1,6 @@
 from pick import pick
 
-inp = input("Enter the value: ")
-finalInp = int(inp)
+user_input = int(input("Enter the value: "))
 
 lengths = {
     "Meter": 1,
@@ -46,10 +45,9 @@ options = [
 ]
 option2, index = pick(options, title, indicator="=>", default_index=0)
 
-fromUnit = lengths[option1]
-toUnit = lengths[option2]
-baseAmount = finalInp * fromUnit
-finalAns = baseAmount / toUnit
+from_unit = lengths[option1]
+to_unit = lengths[option2]
+base_amount = user_input * from_unit
+final_answer = int(base_amount / to_unit)
 
-print(f"Your unit conversion of {finalInp} from {option1} to {option2} is {finalAns}")
-# print(type(finalAns))
+print(f"Your unit conversion of {user_input} from {option1} to {option2} is {final_answer}")

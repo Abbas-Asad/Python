@@ -1,0 +1,9 @@
+[
+    {
+        "title": "book1",
+        "author": "author1",
+        "year": "2003",
+        "genre": "comedy",
+        "read": false
+    }
+]

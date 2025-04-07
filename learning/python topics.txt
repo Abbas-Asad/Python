@@ -1,0 +1,43 @@
+# Variables
+# Type casting and checking , type(var)
+# Dynamically vs statically typed (python vs typescript)
+# arithmetic, comparison and logical operators
+# String and its methods, fstring and docstring, length check by len(var) 
+# comments
+# functions
+# loops ,(for and while)
+# conditionals ,(if elif)
+# indentation ,/ : 4 spaces (instead of {} like other langs, python use spaces or tabs)(: then agli line may space)(jitna nested code hoga indentation utni hi brhti jaey gi)(loos funcs conds)
+# data types ,baqi 3 (tuples, lists and dict) 
+modules , import modules (date random time)
+try except
+# OOPS
+# file handling
+match case
+lambda function
+generators decorators
+
+# list and dict methods (last index -1 wherever indexing is)(python allows negative indexing from last like -1 -1 -2 etc)
+
+# slice
+# dictionaries
+
+#           advanced topics
+# OOPS
+# file handling
+# Numpy, Pandas, PyTorch, UV, Streamlit, OpenAI SDK  etc
+# cpython, cython, pypy
+# aur range aur set wghera bhi hai data type
+
+
+
+
+
+#        extras time pass       #
+# lambda functions like js arrow functions
+# python doesn't have switch case
+# shorthand like ternary operator
+# age = 20
+# status = "Adult" if age >= 18 else "Minor"
+# print(status)    
+#  shorthand like ternary operator
