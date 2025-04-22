@@ -165,3 +165,10 @@ print(numbers_set)
 
 my_set = {123, 452, 5, 6}
 print(my_set)
+
+# immutable ka hash generate hita hai
+
+
+
+
+# readabaility ka issue  , lazy loading        built in modular custom                pass by vakue or function               /        list unpack single*  dict unpack  douvle**                yield aur next keyword         grnerator            precedence rule umer misaaal  raise error through krne kay luey        else exception kay sath if else ki trha work krta hai
