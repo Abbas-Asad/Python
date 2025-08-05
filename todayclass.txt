@@ -1,0 +1,28 @@
+heap aur stack
+abstraction
+
+() instattiation ()  na kay calling
+
+
+instance may koi cheez nhi hai oythin dynamically ja kr add kr rhi hai
+
+property ki value may instance create ho rha hai
+
+left to right nhi blkay right to left sahi hai
+
+python may function object hai wali baat
+
+init folder ko package bna deta hai
+
+
+
+
+
+
+metaclasses single ton factory
+
+class default pattern change metaclass
+
+
+factory loose coipling
+factory method composition nhi

@@ -22,7 +22,9 @@ generators decorators
 # slice
 # dictionaries
 
-#           advanced topics
+
+
+#        advanced topics        #
 # OOPS
 # file handling
 # Numpy, Pandas, PyTorch, UV, Streamlit, OpenAI SDK  etc
@@ -31,13 +33,20 @@ generators decorators
 
 
 
-
-
 #        extras time pass       #
 # lambda functions like js arrow functions
-# python doesn't have switch case
+# python doesn't have switch case instead it hs match case
 # shorthand like ternary operator
 # age = 20
 # status = "Adult" if age >= 18 else "Minor"
 # print(status)    
 #  shorthand like ternary operator
+
+
+<---Exam related-->
+memory detail 
+binary type
+set
+string literal
+Sir's repo mistake (CamelCase PascalCase):
+https://colab.research.google.com/drive/1ct5Efj7xRRpu155NOx38dNgnpQgC25yv?usp=sharing#scrollTo=hUJh8H_41rea
