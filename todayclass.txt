@@ -1,7 +1,7 @@
 heap aur stack
 abstraction
 
-() instattiation ()  na kay calling
+() instantiation ()  na kay calling
 
 
 instance may koi cheez nhi hai oythin dynamically ja kr add kr rhi hai
