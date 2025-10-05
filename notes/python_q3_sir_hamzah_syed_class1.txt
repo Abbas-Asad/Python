@@ -1,0 +1,21 @@
+ipynb may python ko tukron may break kr skty hain
+
+markdown  format  / github readme may bhai hai
+
+CPU: ask ata time vs GPU
+
+GPU may TPU 
+
+high level vs low loevel lang
+
+interpreted: line by line code
+
+bytecode and process
+
+virtual machine :memory 
+
+low level, high level
+compiler, transpiler, interpreter
+binary code
+
+CPU vs GPU vs TPU

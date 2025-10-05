@@ -1,0 +1,101 @@
+Colab 5 notes:
+
+match case 
+In for loop, keyword (in) is used for iteration not for checking membership 
+
+for loops: Used to iterate over a sequence (e.g., lists, strings, or ranges). (or if you know the iteration number) 
+while loops: Used to repeat a block of code as long as a condition is True. (or if you don't know the iteration number) 
+Note: There are many for and while loop use cases examples in colab 
+
+throwaway variable (will not be referenced)
+
+Logical operators in Python are used to combine or modify boolean values (True or False).
+Comparison operators in Python are used to compare or check two side values.
+
+----------------------xx----------------------
+
+
+Colab 8 notes:
+Keyword argument may order matter nhi krta 
+function return krta hi hai chahy aap na kro
+local global very easy, functions kay andar local hain sirf whi pr accessable hain aur us kay ilawa sab global hain
+anonymous function wo jo def say na bnaya jaey (lambda)
+jitna import utni memeory
+wildcard *
+
+
+* unpacking iterables
+passby reference vs value
+Object Type	Function se change hoga?
+Immutable (int, str, etc.)	❌ Nahin
+Mutable (list, dict, etc.)	✅ Haan (agar reference na todi)
+Python uses pass by object reference
+crash hinja chiye tha while may aur har bar previous statreyad
+aisa function jis ki body may hum usay hi call krdein   (function may usi function ki calling )  recursive logic building bhi acha hai 
+LEGB precedence rule
+keyword ki jga positional nhi but posiitonal ki jga sometimes keyword haan
+
+---------------------------------------------xx---------------------------------------------
+
+Colab 6 notes:
+we can sort by numbers (both ascend and descend) (and python sort properly not like js)
+we can also sort by words (first char, last char and also by word length)
+destructuring is unpacking here
+list comprehension (existing list say list bnane ka mazedar tareeqa)
+
+imp methods:  get, keys, values, items, update, dict() from iterable to dict 
+from keys say sab ko aik value assign krnay ka mazedar treqa
+dict() constructor is say quotes nhi lgany pren gy aur na hi curly braces
+direct mt kro methods kay through sab kro taky errors sy bch sko (.get .update .pop wghera)
+ordered mtlb jis sequence may store kya whi rhega.
+dict may keys par loop karna is default behavior hai python may.
+Dictionary from iterable
+Tuples are Hashable
+ Immutable can be stored in a single block of memory
+
+---------------------------------------------xx---------------------------------------------
+
+Colab 9 notes:
+2) Else kay liye try pura complete chalna zaroori hai
+3) Custom exceptions bnane ka tariqa
+# try except finally else raise
+
+NoReturn (jabardast type hint) , None (Returns control to the caller, functions which will never complete (terminating, raising, infinite))
+
+1) Try may jitna code shi hoga wha tk chlega phir wha se exception pr move kr jaeyga
+(wesay ajeeb ye hai kay is case may try except dono chalein gy)
+aik choti si example:
+try:
+    a = 2+2
+    print(a)
+    print(a/0)
+except:
+    print("an error occured")
+
+---------------------------------------------xx---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+ (((((Python Quick Guide — Abbas Style 😎
+
+✅ PEP 8 – Code likhne ka tareeqa!
+→ Clean, readable, professional. Snake_case, 4 spaces, 79 char lines… sab kuch set hai.
+
+✅ pip – Python ka package manager
+→ "Jo chahiye, woh install karey!" 😁
+
+✅ PyPI – Python Package Index
+→ Saara maal yahan stored hai (like Play Store for Python). pip isi se uthata hai.
+
+✅ ! in Colab – Bash command chalay Python shell ke andar
+→ !pip install pandas like a boss 💻)))))

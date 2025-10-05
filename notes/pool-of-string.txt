@@ -1,0 +1,17 @@
+2.Bytecode
+
+Pool of String Literals in Python (check)
+Sir ka Boolean ka usool dekhn hai video may   (check)
+(sir wali binary type cheezon ko screenshot kay matabaqat kay kyu yahan dalay)   
+
+
+Everything used to make integers in the source code as a fixed value is an integer literal
+a = 42    # Decimal integer literal
+# b = 0x2A  # Hexadecimal integer literal
+c = 0b101010  # Binary integer literal
+print(a is c)  # True, all represent the same integer value
+
+sir ka logical
+
+
+

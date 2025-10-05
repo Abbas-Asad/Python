@@ -1,0 +1,41 @@
+(everything is treated as an object this means that all data types have methods and properties)
+(walrus Operator :=, bitwise operator)  -------
+(string may .count() not found to 0 deta hai, .find() not found to -1 deta hai)
+(No Implicit Conversion Between str and int)
+(Shortcut: Kuch na ho to false aur kuch ho to true)
+(Integer literal: from -5 to 256)
+(use asterisk for string repetition: variable *number)
+(explicit type casting may data loss ho skta hai but implicit may nhi)
+(list is mostly used for storing same type data e.g.fruits) -----
+(comparison starts from left side in conditions but brackets are been solved first) --------
+(only string use inverted commas in python)
+(in arithmetic operators BODMAS rule is applied)
+(division answer will always be in float (so use // for int))
+(we can also write our script in fstring)
+(class constructor & function return ye 2no agar aap na bhi bnao to background may python khud hi bna deta hai)
+(__callable__ jo bhi cheez () ky through callable ho wha ye laazmi hota hai e.g.every python function)
+
+
+
+throwaway variale reference in memeory wy created
+Even though tuples are immutable, Python may create new instances in memory when you define identical tuples in separate assignments. This is why id(tuple_1) and id(tuple_2) may differ.
+dict(name = "John", age = 36, country = "Norway") # It is also possible to use the dict() constructor to make a dictionary.
+
+sorting buhat tareeqon ay ho skti hai
+
+----Remaining----
+binary type
+somememory related issues
+hashing
+sets in depth
+
+
+list may har trha say sorting ho skti hai
+
+
+Pass by Reference vs Value
+
+python wild card
+raw string
+
+what is 101
